@@ -66,6 +66,7 @@ a.active{
 
 /* CSS DO FORMULÁRIO - INICIO */
 .box{
+    transform: translateY(10%);
     position: absolute;
     top: 10%;
     left: 10%;
@@ -73,10 +74,10 @@ a.active{
     bottom: 10%;
     background-color: rgba(0, 0, 0, 0.7);
     height: 105vh;
-    transform: translateY(5%);
     padding: 10px;
     border-radius: 20px;
     color: #e7e7e7;
+    z-index: 1;
 }
 fieldset{
     border: 3px solid #d44848;
@@ -136,7 +137,78 @@ legend{
 #submit:hover{
     background-image: linear-gradient(to right,#6413b5, #278be3, #195081, #6413b5);
 }
-
+                        /* Inicio CSS FOOTER */
+                        footer{
+                            width: 100%;
+                            margin-top: 100vh;
+                            justify-content: space-between;
+                            background-color: #ffffff5e;
+                            padding: 10px 0;
+                        }
+                        .container-footer{
+                            max-width: 1400px;
+                            padding: 0 4%;
+                            margin: auto;
+                        }
+                        .row-footer{
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .footer-col{
+                            width: 25%;
+                            padding: 0 15px;
+                        }
+                        .footer-col h4{
+                            font-size: 24px;
+                            color: #e7e7e7;
+                            text-shadow: 5px 5px 5px #000000;
+                            margin-bottom: 10px;
+                            font-weight: 700;
+                            position: relative;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                        }
+                        .footer-col ul{
+                            list-style: none;
+                        }
+                        .footer-col ul li{
+                            margin: 10px 0;
+                        }
+                        .footer-col ul li a{
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: #e5e5e5;
+                            text-shadow: 2px 2px 5px #000000;
+                            font-weight: 400;
+                            display: block;
+                            transition: all 0.3s ease;
+                        }
+                        .footer-col ul li a:hover{
+                            color: #ffffff;
+                            padding-left: 10px;
+                            transform: scaleY(1.4);
+                        }
+                        .footer-col .medias-socias a{
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            width: 40px;
+                            margin: 0 10px 10px 0;
+                            text-decoration: none;
+                            border: solid #fff;
+                            border-radius: 50%;
+                            color: #fff;
+                            transition: all 0.5s ease;
+                        }
+                        .footer-col .medias-socias a i:hover{
+                            transform: scale(2.2);
+                        }
+                        .espacamento{
+                            z-index: 1;
+                            padding-top: 50px;
+                            margin-top: 50px;
+                        }
 /* CSS PARA RESPONSIVIDADE MOBILE */
 @media (max-width: 650px ){
     body{

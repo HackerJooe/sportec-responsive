@@ -165,15 +165,22 @@ section .filter-card {
 }
 
 .search-button:hover {
-  background: #dedede;
+  background: #00fc15;
   color: #00285f;
 }
-
+img:hover{
+  transform: scale(1.3);
+}
 .title-wrapper-catalog {
   margin-top: 200px;
   padding-bottom: 20px;
 }
-
+.title-wrapper-catalog h3, p{
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.7em;
+}
 section .card-wrapper {
   max-width: 1000px;
   height: 100%;
@@ -230,7 +237,7 @@ section .card-item {
 }
 
 .card-item button:hover {
-  background: #dedede;
+  background: #00fc15;
   color: #00285f;
 }
 
