@@ -1,30 +1,47 @@
 /* CSS PARA RESET DE ALGUNS ELEMENTOS */
-body, ul{
+ul{
     padding: 0;
     margin: 0;
 }
 a{
-    color: #000;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.89rem;
+    font-size: 1.09rem;
     
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/ferramentas-esportivas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
 a:hover{
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.301);
+    color: #e5e5e5;
+    border-radius: 25%;
+    transform: scale(1.09); 
 }
 /* CSS PARA ESTILIZAÇÃO DO HEADER PADRONIZADO E RESPONSIVO */
-#logo{
-    max-width: 30vw;
-}
 #header{
+    left: 0;
+    width: 100%;
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    background: #e7e7e7;
+    background: #ffffff5e;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 #menu{
     display: flex;
@@ -48,11 +65,6 @@ a.active{
 
 
 /* CSS DO FORMULÁRIO - INICIO */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #278be3, #195081, #000203);
-}
 .box{
     position: absolute;
     top: 10%;
@@ -139,6 +151,10 @@ legend{
         margin: 0;
         padding: 0;
     }
+    a:hover{
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 0%;
+    }
     #menu{
         display: block;
         position: absolute;
@@ -153,10 +169,13 @@ legend{
         overflow-y: hidden;
         
     }
+    #nav{
+        text-align: center;
+    }
     #nav.active #menu{  
         visibility: visible;
         height: calc(65vh - 70px);
-        overflow-y: auto;
+        overflow-y: auto;    
     }
     #menu a{
         padding: 1rem 0;
