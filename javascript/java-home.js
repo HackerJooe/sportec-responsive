@@ -21,7 +21,7 @@ var swiper = new Swiper(" .mySwiper", {
     slidesPerGroup:1,
     loop: true,
     loopFillGroupWithBlank: true,
-
+    
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -36,22 +36,3 @@ var swiper = new Swiper(" .mySwiper", {
 )
 
 
-// JavaScript para o display de Historia 
-
-function mostrar(){
-        for(var i=1;i<4;i++){
-            document.getElementById("aba"+i).hidden = true;
-        }
-        var obj=event.target.dataset.nome;
-        document.getElementById(obj).hidden=false;
-    }
-function inicia(){
-        for(var i=1;i<4;i++){
-            document.getElementById("aba"+i).hidden = true;
-        }
-        document.getElementById("profile").addEventListener("click",mostrar);
-        document.getElementById("netw").addEventListener("click",mostrar);
-        document.getElementById("netw2").addEventListener("click",mostrar);
-        
-    }
-    window.addEventListener("load",inicia);
